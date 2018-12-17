@@ -1,9 +1,24 @@
 import update from 'react-addons-update';
 import constants from './actionConstants';
 
-// const {} = constants;
-const ACTION_HANDLERS = {
+const { SET_NAME } = constants;
 
+export function setName() {
+    return {
+        type: SET_NAME,
+        payload: 'Kaleem'
+    }
+}
+
+function handleSetName(state, action) {
+    return update(state, {
+        name: {
+            $set: action.payload
+        }
+    })
+}
+const ACTION_HANDLERS = {
+SET_NAME: handleSetName
 }
 const initialState = {};
 

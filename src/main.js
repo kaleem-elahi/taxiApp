@@ -5,7 +5,7 @@ import AppContainer from './AppContainer';
 
 export default class Root extends React.Component{
   renderApp(){
-    const initialState = window.__INITIAL_STATE__;
+    const initialState = window.__INTITIAL_STATE__;
     const store = createStore(initialState);;
 
     return (

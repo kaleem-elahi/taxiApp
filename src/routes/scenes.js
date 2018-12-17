@@ -1,11 +1,13 @@
 import React from "react";
 import {
-  Action, Scenes
+  Actions, Scene
 } from "react-native-router-flux";
 import HomeContainer from './Home/containers/HomeContainer';
 
-const scenes = Action.create(
+ const scenes = Actions.create(
   <Scene key="root">
-    <Scene key="home" component="HomeContainer" title="home" initial />
+    <Scene key="home" component={HomeContainer} title="home" initial />
   </Scene>
 )
+
+export default scenes;
