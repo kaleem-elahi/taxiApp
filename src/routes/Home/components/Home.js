@@ -127,12 +127,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     alignItems: 'center',
     marginHorizontal: 10,
-    backgroundColor: 'blue'
   },
   buttonContainer: {
     flexDirection: 'row',
     marginVertical: 20,
-    backgroundColor: 'red',
+    backgroundColor: 'transparent',
   },
 });
 
