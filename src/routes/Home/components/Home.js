@@ -62,7 +62,7 @@ class Home extends React.Component{
     return(
     <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
     <MapView
-      provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+      // provider={PROVIDER_GOOGLE} // remove if not using Google Maps
       region={this.state.region}
       onRegionChange={this.onRegionChange}
     >
@@ -127,11 +127,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     alignItems: 'center',
     marginHorizontal: 10,
+    backgroundColor: 'blue'
   },
   buttonContainer: {
     flexDirection: 'row',
     marginVertical: 20,
-    backgroundColor: 'transparent',
+    backgroundColor: 'red',
   },
 });
 
